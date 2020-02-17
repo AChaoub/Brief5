@@ -8,6 +8,30 @@ window.onload = () => {
     var slide1 = document.getElementById("Slides1");
     var slide2 = document.getElementById("Slides2");
     var slide3 = document.getElementById("Slides3");
+
+    function menuOp() {
+        const _MENU_CLOSE = document.getElementById('nav-close');
+        const _MENU_OPEN = document.getElementById('nav-menu-icon');
+        const _MENU = document.getElementById('nav-menu');
+        let state = false;
+        _MENU_OPEN.addEventListener('click', () => {
+            _MENU_OPEN.style.display = 'none';
+            if (!state) {
+                _MENU.style.display = "flex";
+                state = true;
+            }
+        });
+        _MENU_CLOSE.addEventListener('click', () => {
+            _MENU_OPEN.style.display = 'block';
+            if (state) {
+                _MENU.style.display = "none";
+                state = false;
+            }
+        });
+    }
+    menuOp();
+       
+
     
      
     N1.addEventListener('click', ()=>{
@@ -36,13 +60,6 @@ window.onload = () => {
         DisplayNone(slide3,slide1);
         slide2.style.display  = "flex";
     });
-    
-    
-    
-    
-
-
-    
     function DisplayNone(a,b){
         a.style.display = "none";
         b.style.display = "none";

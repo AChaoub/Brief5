@@ -489,7 +489,7 @@ a:hover{
                     -moz-border-radius: 10px;
                     -ms-border-radius: 10px;
                     -o-border-radius: 10px;
-}
+                }
                 #Ok{
                     width: 20%;
                     height: 30px;
@@ -502,7 +502,7 @@ a:hover{
                     -moz-border-radius: 10px;
                     -ms-border-radius: 10px;
                     -o-border-radius: 10px;
-}
+                }
             }
             #pay{
                 @include FlexR();
@@ -542,7 +542,69 @@ a:hover{
             color: Black;
         }
     }
+}
 
+
+    
+
+
+#NavBar-Mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+}
+
+#nav-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 5px;
+    #nav-menu-icon {
+        position: absolute;
+        left: 96%;
+        top:41%;
+        cursor: pointer;
+        #menu{
+            width: 35px;
+            height: 35px;
+    
+        }
+        #nav-menu-logo img {
+            width: 180px;
+        }
+    }
+    #nav-menu-logo img {
+        width: 180px;
+    }
+}
+
+#nav-menu{
+    left: 85%;
+    margin-top: 5%;
+    position: absolute;
+    @include FlexC();
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 15%;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    #nav-close{
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        margin-left: 53px;
+        position: absolute;
+        left: 86px;
+        top: -18px;
+    }
+    a{
+        height : 90px;
+        color: black;
+    }
 }
 
 
