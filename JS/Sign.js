@@ -1,4 +1,30 @@
 window.onload = ()=>{
+
+    function menuOp() {
+        const _MENU_CLOSE = document.getElementById('nav-close');
+        const _MENU_OPEN = document.getElementById('nav-menu-icon');
+        const _MENU = document.getElementById('nav-menu');
+        let state = false;
+        _MENU_OPEN.addEventListener('click', () => {
+            _MENU_OPEN.style.display = 'none';
+            if (!state) {
+                _MENU.style.display = "flex";
+                state = true;
+            }
+        });
+        _MENU_CLOSE.addEventListener('click', () => {
+            _MENU_OPEN.style.display = 'block';
+            if (state) {
+                _MENU.style.display = "none";
+                state = false;
+            }
+        });
+    }
+    menuOp();
+
+
+
+
     var Tableau = document.getElementsByClassName('Upper');
     for(let i=0;i<Tableau.length;i++){
         Tableau[i].onkeyup=()=>{

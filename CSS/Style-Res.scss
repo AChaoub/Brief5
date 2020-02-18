@@ -23,6 +23,13 @@ $color1:#f7f7f7;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+@mixin FlexC() {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 @mixin Placeholder() {
     &::placeholder {
         color: black;
@@ -53,10 +60,68 @@ $color1:#f7f7f7;
 
 body{
     background-color:white;
+    height: auto;
 }
 .blank{
     width: auto;
     height: 20px;
+}
+#NavBar-Mobile {
+    display: none;
+    //display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    #nav-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-top: 5px;
+        #nav-menu-icon {
+            position: absolute;
+            left: 91%;
+            top:41%;
+            cursor: pointer;
+            #menu{
+                width: 35px;
+                height: 35px;
+        
+            }
+            #nav-menu-logo img {
+                width: 180px;
+            }
+        }
+        #nav-menu-logo img {
+            width: 180px;
+        }
+    }
+    #nav-menu{
+        left: 85%;
+        margin-top: 5%;
+        position: absolute;
+        @include FlexC();
+        background-color: rgba(255, 255, 255, 0.89);
+        width: 15%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        #nav-close{
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            margin-left: 53px;
+            position: absolute;
+            left: 86px;
+            top: -18px;
+        }
+        a{
+            height : 90px;
+            color: black;
+        }
+    }    
 }
 .d1{
     width: 100%;
@@ -96,6 +161,8 @@ a{
 a:hover{
     border-bottom: solid 2px white;
 }
+
+
 #Fil{
     width: 90%;
     margin-left: 5%;
@@ -209,8 +276,7 @@ a:hover{
         .Pargs{
             margin-left: 5%;
             p{
-                font-family: $fontP;
-                
+                font-family: $fontP;    
             }
             .par1{
                 font-size : 20px;
@@ -522,10 +588,167 @@ a:hover{
 
 
 
-#ClickA{
-    z-index: -12;
-}
-#Connex{
-    z-index: 99;
+
+
+
+
+// Responsive
+
+@media screen and (max-width:1175px) {
+    
+    #NavBar-Mobile{
+        display: none;
+    }
+    .d1{
+        display: flex;
+    }
+    #DivCon {
+        flex-direction: column;
+
+        #ListeV {
+            width: unset;
+            height: unset;
+            flex-wrap: wrap;
+            // background-color: unset;
+            display: flex;
+            justify-content: space-around;
+            // 
+            margin-left: unset;
+
+            // 
+            .Voitures {
+                position: relative;
+                margin-bottom: 10px;
+
+                .IMGBTN {
+                    width: 266px;
+
+                    img {
+                        height: 130px;
+                    }
+
+                    .BTNChoix {
+                        margin-left: unset;
+                        width: 266px;
+                    }
+                }
+
+                .Pargs {
+                    .par1 {
+                        margin-left: unset;
+                    }
+
+                    .par3 {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 0;
+                    }
+
+                    table {
+                        tbody {
+                            tr {
+                                display: flex;
+                                margin-left: unset;
+
+                                td {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #Reserver {
+            width: unset;
+            margin-top: 25px;
+            .d8 {
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
 }
 
+// 
+@media screen and (max-width:850px) {
+    #NavBar-Mobile #nav-menu {
+        left: 73%;
+        margin-top: 10%;
+        width: 27%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    #Fil {
+        height: 100px;
+        #F1 {
+            #Voiture1 {
+                .V {
+                    width: 100%;
+                }
+                img{
+                    display: none;
+                }
+                p{
+                    font-size: 14px;
+                    margin-top : 40%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .Voitures {
+        width: 90% !important;
+        height: 275px !important;
+        table{
+            display: none;
+
+        }
+
+        .Pargs {
+            // margin-left: 100px;
+
+            .par3 {
+                bottom: 30px !important;
+            }
+        }
+    }
+    #Footer{
+        #parts4{
+            display: none;
+        }
+    }
+}
+
+// 
+@media screen and (max-width:670px) {
+    #NavBar-Mobile #nav-menu {
+        left: 67%;
+        margin-top: 10%;
+        width: 32%;
+    }
+    #NavBar-Mobile{
+        display: flex;
+    }
+    .d1{
+        display: none;
+    }
+    .Pargs {
+         //margin-left: 1% !important;
+        .par1 , .par2 , .par3{
+            margin-top: 15%;
+        }  
+    }
+    body{
+        height: auto;
+    }
+}

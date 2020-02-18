@@ -25,12 +25,35 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="d1">
+    <div id="NavBar-Mobile" >
+        <div id="nav-header">
+            <div id="nav-menu-logo">
+                <img src="./IMG/logo.png"  alt="">
+            </div>
+            <div id="nav-menu-icon">
+                <img src="./IMG/menu.png" alt="" id="menu">
+            </div>
+        </div>
+        <div id="nav-menu" style="display: none;" >
+            <img src="./IMG/close1.png" id="nav-close">
+            <div class="blank"></div>
+            <a href="./test.html" class="nav-menu-item">
+                <span>HOME</span>
+            </a>
+            <a href="./Reservation.html" class="nav-menu-item">
+                <span>RESERVATION</span>
+            </a>
+            <a href="./login.html" class="nav-menu-item">
+                <span>CONNEXION</span>
+            </a>
+        </div>
+    </div>
+    <div class="d1" >
         <div id="image"><img src="./IMG/logo.png" alt=""></div>
         <div id="MenuB">
             <div class="d2"><a href="./test.html">HOME</a></div>
             <div class="d2" ><a href="./Reservation.html">RESERVATION</a></div>
-            <div  class="d2"><a href="javascript:visible()"  id="Connex">CONNEXION</a></div>
+            <div id="Connex" class="d2"><a href="javascript:visible()">CONNEXION</a></div>
         </div>
     </div><br>
     <div class="blank"></div>
@@ -68,8 +91,8 @@
                     <input type="button" name="choisir" id="Choix1" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Petite Citadine – Groupe A</p><br>
-                    <p class="par2">Modèle Fiat 500 ou similaire</p><br>
+                    <p class="par1">Petite Citadine – Groupe A</p>
+                    <p class="par2">Modèle Fiat 500 ou similaire</p>
                     <p class="par3">Découvrez la facilité de conduire et de se garer en ville avec la location d’une petite Citadine 4 places. Ultra compacte, cette catégorie de voitures est passe-partout et la plus économique de la gamme Avis.</p>
                     <table>
                         <tr>
@@ -91,8 +114,8 @@
                     <input type="button" name="choisir" id="Choix2" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Citadine - Groupe B</p><br>
-                    <p class="par2">Peugeot 208 ou similaire</p><br>
+                    <p class="par1">Citadine - Groupe B</p>
+                    <p class="par2">Peugeot 208 ou similaire</p>
                     <p class="par3">Citadine idéale pour vos petits trajets ou vos city trips. Agréable à conduire et facile à garer en ville, ce petit véhicule compacte de 5 places saura vous charmer en quelques secondes.</p>
                     <table>
                         <tr>
@@ -116,9 +139,9 @@
                     <input type="button" name="choisir"  id="Choix3"class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Compacte Automatique – Groupe L</p><br>
-                    <p class="par2">NEW Renault Megane IV ou similaire</p><br>
-                    <p class="par3">Dotée d’une boîte de vitesses automatique, cette catégorie allie confort de conduite et qualité de vie à bord. Adieu débrayages incessants, cette catégorie sera particulièrement appréciable en ville pour une location de voiture décontractée.</p>
+                    <p class="par1">Compacte Automatique – Groupe L</p>
+                    <p class="par2">NEW Renault Megane IV ou similaire</p>
+                    <p class="par3">Dotée d’une boîte de vitesses automatique, cette catégorie allie confort de conduite et qualité de vie à bord.</p>
                     <table>
                         <tr>
                             <td><img src="./IMG/user.png"></img> 5 places</td>
@@ -139,8 +162,8 @@
                     <input type="button" name="choisir" id="Choix4" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">SUV – Groupe D</p><br>
-                    <p class="par2">Nissan Qashqaï ou similaire</p><br>
+                    <p class="par1">SUV – Groupe D</p>
+                    <p class="par2">Nissan Qashqaï ou similaire</p>
                     <p class="par3">Les voitures de cette catégorie offrent un confort et bien être à bord. Une route sinueuse, en travaux ou bosselée passera complètement inaperçue auprès de vos passagers. Jamais votre conduite n’aura été aussi fluide.</p>
                     <table>
                         <tr>
@@ -162,8 +185,8 @@
                     <input type="button" name="choisir" id="Choix5" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Berline Luxe – Groupe M</p><br>
-                    <p class="par2">Modèle Mercedes Classe E ou similaire</p><br>
+                    <p class="par1">Berline Luxe – Groupe M</p>
+                    <p class="par2">Modèle Mercedes Classe E ou similaire</p>
                     <p class="par3">La puissance d’une catégorie haut de gamme, une silhouette séduisante, des lignes élégantes… Le style sophistiqué et raffiné de cette catégorie ne vous laissera pas indifférent. Vous apprécierez sans aucun doute son intérieur cuir, son GPS intégré et sa boîte automatique.
                     </p>
                     <table>
@@ -186,9 +209,9 @@
                     <input type="button" name="choisir" id="Choix6" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Minibus – Groupe N</p><br>
-                    <p class="par2">Modèle Renault Trafic ou similaire</p><br>
-                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers. Très prisé pour les événements sportifs ou les vacances en famille et entre amis, il vous ramènera en enfance, le confort en plus.</p>
+                    <p class="par1">Minibus – Groupe N</p>
+                    <p class="par2">Modèle Renault Trafic ou similaire</p>
+                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers.</p>
                     <table>
                         <tr>
                             <td><img src="./IMG/user.png"></img> 9 places</td>
@@ -209,9 +232,9 @@
                     <input type="button" name="choisir" id="Choix7" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Fourgon – Groupe X</p><br>
-                    <p class="par2">Modèle Mercedes Sprinter  ou similaire</p><br>
-                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers. Très prisé pour les événements sportifs ou les vacances en famille et entre amis, il vous ramènera en enfance, le confort en plus.</p>
+                    <p class="par1">Fourgon – Groupe X</p>
+                    <p class="par2">Modèle Mercedes Sprinter  ou similaire</p>
+                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers.</p>
                     <table>
                         <tr>
                             <td><img src="./IMG/user.png"></img> 9 places</td>
@@ -232,9 +255,9 @@
                     <input type="button" name="choisir" id="Choix8" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Fourgon – Groupe XL</p><br>
-                    <p class="par2">Modèle Renault Master  ou similaire</p><br>
-                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers. Très prisé pour les événements sportifs ou les vacances en famille et entre amis, il vous ramènera en enfance, le confort en plus.</p>
+                    <p class="par1">Fourgon – Groupe XL</p>
+                    <p class="par2">Modèle Renault Master  ou similaire</p>
+                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers.</p>
                     <table>
                         <tr>
                             <td><img src="./IMG/user.png"></img> 9 places</td>
@@ -255,9 +278,9 @@
                     <input type="button" name="choisir" id="Choix9" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Fourgon – Groupe XL</p><br>
-                    <p class="par2">Modèle Renault Master  ou similaire</p><br>
-                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers. Très prisé pour les événements sportifs ou les vacances en famille et entre amis, il vous ramènera en enfance, le confort en plus.</p>
+                    <p class="par1">Fourgon – Groupe XL</p>
+                    <p class="par2">Modèle Renault Master  ou similaire</p>
+                    <p class="par3">Il est loin le temps des colonies de vacances… Doté de 9 places, le minibus est le véhicule Avis avec le plus grand nombre de passagers.</p>
                     <table>
                         <tr>
                             <td><img src="./IMG/user.png"></img> 9 places</td>
@@ -278,8 +301,8 @@
                     <input type="button" name="choisir" id="Choix10" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Mariage – Groupe XL</p><br>
-                    <p class="par2">Modèle RollsRoyce SUV ou similaire</p><br>
+                    <p class="par1">Mariage – Groupe XL</p>
+                    <p class="par2">Modèle RollsRoyce SUV ou similaire</p>
                     <p class="par3">Outre son design, l'Audi Q8 incarne a la perfection la sportivité selon Audi : efficient, agile et dynamique. Offrez-vous une expérience de conduite hors-norme grâce à ce V6 développant une puissance de 286 chevaux. 
                     </p>
                     <table>
@@ -302,8 +325,8 @@
                     <input type="button" name="choisir"  id="Choix11" class="BTNChoix choix" value="Choisir">
                 </div>
                 <div class="Pargs">
-                    <p class="par1">Mariage – Groupe XXL</p><br>
-                    <p class="par2">Modèle RangeRover évoque  ou similaire</p><br>
+                    <p class="par1">Mariage – Groupe XXL</p>
+                    <p class="par2">Modèle RangeRover évoque  ou similaire</p>
                     <p class="par3">le design du Range Rover Velar est révolutionnaire. Ses flancs élégants, ses poignées de porte déployables affleurantes et le becquet arrière intégré, améliorent l’efficacité aérodynamique du véhicule.</p>
                     <table>
                         <tr>

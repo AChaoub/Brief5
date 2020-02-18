@@ -7,7 +7,6 @@
 
 body {
   background-color: white;
-  height: auto;
 }
 
 .d1 {
@@ -57,6 +56,12 @@ body {
   height: 50px;
 }
 
+@media screen and (max-width: 850px) {
+  .d1 {
+    display: none;
+  }
+}
+
 a {
   list-style-type: none;
   text-decoration: none;
@@ -102,6 +107,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  #d5 {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 #d5 #Par {
@@ -159,6 +171,12 @@ a:hover {
   width: 20px;
   height: 20px;
   margin-left: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  #d7 {
+    display: none;
+  }
 }
 
 .blank {
@@ -233,12 +251,42 @@ a:hover {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 900px) {
+  #Ofs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 #Ofs .Ofs1 {
   width: 22%;
   height: 90%;
   margin-top: 1.5%;
   margin-left: 2.5%;
   background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  #Ofs .Ofs1 {
+    width: 30%;
+    height: auto;
+    overflow: visible;
+  }
 }
 
 #Ofs .Ofs1 .yel {
@@ -503,7 +551,28 @@ a:hover {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 500px;
+  height: 520px;
+}
+
+@media screen and (max-width: 900px) {
+  #Propos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 
 #Propos #Part1 {
@@ -542,6 +611,12 @@ a:hover {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 900px) {
+  #Propos #Part1 {
+    width: 100%;
+  }
+}
+
 #Propos #Part2 {
   width: 40%;
   background-color: black;
@@ -573,6 +648,12 @@ a:hover {
   font-size: 16px;
   margin-left: 21%;
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 900px) {
+  #Propos #Part2 {
+    width: 100%;
+  }
 }
 
 #sincrire {
@@ -831,6 +912,12 @@ a:hover {
       flex-wrap: nowrap;
 }
 
+@media screen and (max-width: 900px) {
+  #Coorp {
+    display: block;
+  }
+}
+
 #Coorp #NomSoc, #Coorp #Droits, #Coorp #Cor {
   width: 30%;
   margin-left: 2%;
@@ -847,9 +934,7 @@ a:hover {
 }
 
 #NavBar-Mobile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -858,7 +943,7 @@ a:hover {
   position: absolute;
 }
 
-#nav-header {
+#NavBar-Mobile #nav-header {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -879,27 +964,27 @@ a:hover {
   padding-top: 5px;
 }
 
-#nav-header #nav-menu-icon {
+#NavBar-Mobile #nav-header #nav-menu-icon {
   position: absolute;
-  left: 96%;
+  left: 91%;
   top: 41%;
   cursor: pointer;
 }
 
-#nav-header #nav-menu-icon #menu {
+#NavBar-Mobile #nav-header #nav-menu-icon #menu {
   width: 35px;
   height: 35px;
 }
 
-#nav-header #nav-menu-icon #nav-menu-logo img {
+#NavBar-Mobile #nav-header #nav-menu-icon #nav-menu-logo img {
   width: 180px;
 }
 
-#nav-header #nav-menu-logo img {
+#NavBar-Mobile #nav-header #nav-menu-logo img {
   width: 180px;
 }
 
-#nav-menu {
+#NavBar-Mobile #nav-menu {
   left: 85%;
   margin-top: 5%;
   position: absolute;
@@ -924,7 +1009,7 @@ a:hover {
   border-bottom-left-radius: 30%;
 }
 
-#nav-menu #nav-close {
+#NavBar-Mobile #nav-menu #nav-close {
   cursor: pointer;
   width: 35px;
   height: 35px;
@@ -934,8 +1019,76 @@ a:hover {
   top: -18px;
 }
 
-#nav-menu a {
+#NavBar-Mobile #nav-menu a {
   height: 90px;
   color: black;
+}
+
+@media screen and (max-width: 1175px) {
+  #d5 {
+    width: 100%;
+    margin-left: 0;
+  }
+  #d7 {
+    display: none;
+  }
+  #NavBar-Mobile {
+    display: none;
+  }
+  .d1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Footer {
+    display: none;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #NavBar-Mobile #nav-menu {
+    left: 73%;
+    margin-top: 10%;
+    width: 27%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Propos #Part2 .Padr {
+    font-size: 10px;
+  }
+  #parts4 {
+    display: none;
+    height: 0px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #NavBar-Mobile #nav-menu {
+    left: 67%;
+    margin-top: 10%;
+    width: 32%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Propos #Part2 .Padr {
+    font-size: 10px;
+  }
+  #parts4 {
+    display: none;
+    height: 0;
+  }
 }
 /*# sourceMappingURL=style1.css.map */

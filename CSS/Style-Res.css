@@ -7,11 +7,103 @@
 
 body {
   background-color: white;
+  height: auto;
 }
 
 .blank {
   width: auto;
   height: 20px;
+}
+
+#NavBar-Mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: absolute;
+}
+
+#NavBar-Mobile #nav-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon {
+  position: absolute;
+  left: 91%;
+  top: 41%;
+  cursor: pointer;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #menu {
+  width: 35px;
+  height: 35px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-icon #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-header #nav-menu-logo img {
+  width: 180px;
+}
+
+#NavBar-Mobile #nav-menu {
+  left: 85%;
+  margin-top: 5%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.89);
+  width: 15%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+#NavBar-Mobile #nav-menu #nav-close {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  margin-left: 53px;
+  position: absolute;
+  left: 86px;
+  top: -18px;
+}
+
+#NavBar-Mobile #nav-menu a {
+  height: 90px;
+  color: black;
 }
 
 .d1 {
@@ -723,11 +815,146 @@ a:hover {
   cursor: pointer;
 }
 
-#ClickA {
-  z-index: -12;
+@media screen and (max-width: 1175px) {
+  #NavBar-Mobile {
+    display: none;
+  }
+  .d1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #DivCon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #DivCon #ListeV {
+    width: unset;
+    height: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN {
+    width: 266px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN img {
+    height: 130px;
+  }
+  #DivCon #ListeV .Voitures .IMGBTN .BTNChoix {
+    margin-left: unset;
+    width: 266px;
+  }
+  #DivCon #ListeV .Voitures .Pargs .par1 {
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures .Pargs .par3 {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+  }
+  #DivCon #ListeV .Voitures .Pargs table tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: unset;
+  }
+  #DivCon #ListeV .Voitures .Pargs table tbody tr td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+  #DivCon #Reserver {
+    width: unset;
+    margin-top: 25px;
+  }
+  #DivCon #Reserver .d8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
-#Connex {
-  z-index: 99;
+@media screen and (max-width: 850px) {
+  #NavBar-Mobile #nav-menu {
+    left: 73%;
+    margin-top: 10%;
+    width: 27%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  #Fil {
+    height: 100px;
+  }
+  #Fil #F1 #Voiture1 .V {
+    width: 100%;
+  }
+  #Fil #F1 #Voiture1 img {
+    display: none;
+  }
+  #Fil #F1 #Voiture1 p {
+    font-size: 14px;
+    margin-top: 40%;
+    margin-left: 0;
+  }
+  .Voitures {
+    width: 90% !important;
+    height: 275px !important;
+  }
+  .Voitures table {
+    display: none;
+  }
+  .Voitures .Pargs .par3 {
+    bottom: 30px !important;
+  }
+  #Footer #parts4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #NavBar-Mobile #nav-menu {
+    left: 67%;
+    margin-top: 10%;
+    width: 32%;
+  }
+  #NavBar-Mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .d1 {
+    display: none;
+  }
+  .Pargs .par1, .Pargs .par2, .Pargs .par3 {
+    margin-top: 15%;
+  }
+  body {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=Style-Res.css.map */
